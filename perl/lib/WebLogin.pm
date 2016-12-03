@@ -1092,7 +1092,7 @@ sub print_remuser_redirect {
         print STDERR "REMUSER_REDIRECT not configured\n"
             if $self->param ('logging');
         $self->template_params ({err_webkdc => 1});
-        my $errmsg = "unrecoverable error occured. Try again later.";
+        my $errmsg = "unrecoverable error occurred. Try again later.";
         $self->template_params ({err_msg => $errmsg});
         return $self->print_error_page;
     } else {
@@ -1924,7 +1924,7 @@ sub handle_login_error {
 
         # Something very nasty.  Just display a "we don't know" error.
         if ($status == WK_ERR_UNRECOVERABLE_ERROR) {
-            $errmsg = "unrecoverable error occured. Try again later.";
+            $errmsg = "unrecoverable error occurred. Try again later.";
 
         # User took too long to login and the original request token is stale.
         } elsif ($status == WK_ERR_REQUEST_TOKEN_STALE) {
@@ -2278,7 +2278,7 @@ sub multifactor_sendauth : Runmode {
         print STDERR "multifactor_sendauth failed due to no server "
             . "configured\n" if $self->param ('logging');
 
-        my $errmsg = "unrecoverable error occured. Try again later.";
+        my $errmsg = "unrecoverable error occurred. Try again later.";
         $self->template_params ({err_webkdc => 1});
         $self->template_params ({err_msg => $errmsg});
         return $self->print_error_page;

@@ -376,7 +376,7 @@ nuke_all_webauth_cookies(MWA_REQ_CTXT *rc)
 
 
 /* FIXME: should we pass some query paramters along with
- *        failure_redirect to indicate what failure occured?
+ *        failure_redirect to indicate what failure occurred?
  *
  */
 static int

@@ -119,7 +119,7 @@ enum webauth_status {
     WA_ERR_FILE_WRITE,       /* Unable to write to file */
     WA_ERR_INVALID,          /* Invalid argument to function */
     WA_ERR_INVALID_CONTEXT,  /* Invalid context passed to function */
-    WA_ERR_KRB5,             /* A Kerberos error occured */
+    WA_ERR_KRB5,             /* A Kerberos error occurred */
     WA_ERR_NOT_FOUND,        /* Item not found while searching */
     WA_ERR_NO_MEM,           /* No memory */
     WA_ERR_NO_ROOM,          /* Supplied buffer too small */

@@ -120,7 +120,7 @@ is_deeply (\%output, \%check, '... and the output matches what is expected');
 $weblogin = init_weblogin ($user, $pass, $st_base64, $rt_base64);
 ($TEST_STATUS, $TEST_ERROR) = (WebKDC::WK_ERR_UNRECOVERABLE_ERROR,
                                'unrecoverable');
-my $errmsg = 'unrecoverable error occured. Try again later.';
+my $errmsg = 'unrecoverable error occurred. Try again later.';
 %output = index_wrapper ($weblogin);
 %check = read_outputfile ('t/data/pages/error/unrecoverable');
 ok (%output, 'error page for unrecoverable error');

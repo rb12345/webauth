@@ -168,7 +168,7 @@ typedef struct {
     struct webauth_context *ctx;
     int error_code; /* set if an error happened */
     const char *error_message;
-    const char *mwk_func; /* function error occured in */
+    const char *mwk_func; /* function error occurred in */
     bool need_to_log; /* set if we need to log error  */
 } MWK_REQ_CTXT;
 

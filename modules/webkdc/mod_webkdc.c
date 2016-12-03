@@ -160,7 +160,7 @@ unknown_element(MWK_REQ_CTXT *rc,
 
 /*
  * concat all the text pieces together and return data, or
- * NULL if an error occured.
+ * NULL if an error occurred.
  */
 static char *
 get_elem_text(MWK_REQ_CTXT *rc, apr_xml_elem *e, const char *mwk_func)
